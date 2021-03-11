@@ -9,7 +9,7 @@
 .calculator{
     position: absolute; 
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     background-color: #fafafa;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
@@ -46,4 +46,10 @@
 
 .equal{
     background-color: coral;
+}
+.gif{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

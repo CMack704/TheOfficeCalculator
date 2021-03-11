@@ -19,7 +19,7 @@ function printValue(val) {
     } else{
         if( val == 'DEL'){
             output.innerHTML = current.slice(0, -1);
-            if( output.innerHTML.length <= 1){
+            if( output.innerHTML.length < 1){
                 output.innerHTML = '0';
             };
         };
@@ -33,7 +33,10 @@ function printValue(val) {
             let result = output.innerHTML;
             output.innerHTML = eval(result);// use eval function to make calculations
         };
-
+        if( val == 'π'){
+            let result = output.innerHTML;
+            output.innerHTML = `${current}3.14159`;//
+        };
     };
 };
 // grabs button values
