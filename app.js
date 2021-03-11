@@ -19,7 +19,7 @@ function printValue(val) {
     } else{
         if( val == 'DEL'){
             output.innerHTML = current.slice(0, -1);
-            if( output.innerHTML.length <= 1){
+            if( output.innerHTML.length < 1){
                 output.innerHTML = '0';
             };
         };
